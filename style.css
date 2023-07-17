@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: #36384D;
+  font-size: 16px;
+}
+body .container {
+  background: #fff;
+  border-radius: 30px;
+  display: flex;
+  width: fit-content;
+}
+body .container .info {
+  padding: 80px 60px;
+  color: hsl(234deg, 29%, 20%);
+}
+body .container .info h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+body .container .info ul {
+  padding: 0;
+}
+body .container .info ul li {
+  background: url(/assets/images/icon-list.svg) no-repeat 7px 7px transparent;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px 0px 8px 45px;
+  vertical-align: middle;
+}
+body .container .info ul li::marker {
+  display: none;
+}
+body .container .info .email-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+body .container .info input#email {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid rgba(146, 148, 160, 0.6);
+  padding: 15px 0;
+}
+body .container .info input[type=submit] {
+  width: 100%;
+  background: hsl(234deg, 29%, 20%);
+  padding: 15px 0;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 25px 0 0 0;
+}
+body .container .info input[type=submit]:hover {
+  cursor: pointer;
+}
+body .container .container-img {
+  padding: 20px;
+}
+body .credits {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-size: 14px;
+  margin: 0 auto;
+  width: 100vw;
+  color: #fff;
+  text-align: center;
+}
+body .credits a {
+  color: hsl(4deg, 100%, 67%);
+}
+body .credits a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
