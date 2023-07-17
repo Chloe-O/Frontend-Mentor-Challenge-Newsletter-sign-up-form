@@ -7,14 +7,26 @@ $main-grey-med: hsl(235, 18%, 26%);
 $main-grey-light: hsl(231, 7%, 60%);
 $red: hsl(4, 100%, 67%);
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background: #36384D;
     font-size: 16px;
+ 
 
     .container {
+        position: absolute;
         background: #fff;
         border-radius: 30px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        max-height: 637px;
         
         display: flex;
         width: fit-content;
@@ -62,7 +74,9 @@ body {
                 display: block;
                 border-radius: 5px;
                 border: 1px solid rgba($main-grey-light, 0.6);
-                padding: 15px 0;
+                padding: 20px 15px;
+                color: $main-grey-light;
+                font-size: 16px;
             }
 
             input[type="submit"] {
@@ -74,6 +88,13 @@ body {
                 font-weight: 700;
                 font-size: 15px;
                 margin: 25px 0 0 0;
+                transition: 0.4s;
+
+                &:hover {
+                    background: #fff;
+                    border: 2px solid $main-blue-dark;
+                    color: $main-blue-dark;
+                }
 
                 &:hover {
                     cursor: pointer;

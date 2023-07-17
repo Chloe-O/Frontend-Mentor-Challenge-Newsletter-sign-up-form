@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", Arial, sans-serif;
   background: #36384D;
   font-size: 16px;
 }
 body .container {
+  position: absolute;
   background: #fff;
   border-radius: 30px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 637px;
   display: flex;
   width: fit-content;
 }
@@ -43,7 +54,9 @@ body .container .info input#email {
   display: block;
   border-radius: 5px;
   border: 1px solid rgba(146, 148, 160, 0.6);
-  padding: 15px 0;
+  padding: 20px 15px;
+  color: hsl(231deg, 7%, 60%);
+  font-size: 16px;
 }
 body .container .info input[type=submit] {
   width: 100%;
@@ -54,6 +67,12 @@ body .container .info input[type=submit] {
   font-weight: 700;
   font-size: 15px;
   margin: 25px 0 0 0;
+  transition: 0.4s;
+}
+body .container .info input[type=submit]:hover {
+  background: #fff;
+  border: 2px solid hsl(234deg, 29%, 20%);
+  color: hsl(234deg, 29%, 20%);
 }
 body .container .info input[type=submit]:hover {
   cursor: pointer;
